@@ -15,7 +15,7 @@ var (
 var (
 	Endpoint        = os.Getenv("ENDPOINT")
 	AccessKeyId     = os.Getenv("ACCESS_KEY_ID")
-	AccessKeySecret = os.Getenv("ACCESS_KEY_SECRET"))
+	AccessKeySecret = os.Getenv("ACCESS_KEY_SECRET")
 	BucketName      = os.Getenv("BUCKET_NAME")
 )
 
@@ -45,6 +45,7 @@ func TestUploadFile(t *testing.T) {
 
 func init() {
 	c, err := oss.New("Endpoint", "AccessKeyId", "AccessKeySecret")
+	fmt.Println(Endpoint, AccessKeyId, AccessKeySecret)
 	if err != nil {
 		panic(err)
 	}
