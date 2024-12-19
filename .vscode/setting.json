@@ -1,3 +1,7 @@
 {
+<<<<<<< HEAD
     "go.testEnvFile": "C:/code/go7/cloud-station-g7/example/unit_test.env"
+=======
+    "go.testEnvFile": "${workspaceFolder}/etc/unit_test.env"
+>>>>>>> 2d351604064bab8a1cde4cef4c5cb62eb7c9b323
 }
